@@ -3,7 +3,7 @@ syntax = "proto2";
 import "game_event.proto";
 
 // Each UDP packet contains one of these messages.
-message SSL_Referee {
+message Referee {
 	// The UNIX timestamp when the packet was sent, in microseconds.
 	// Divide by 1,000,000 to get a time_t.
 	required uint64 packet_timestamp = 1;
@@ -160,5 +160,5 @@ message SSL_Referee {
 	optional bool blueTeamOnPositiveHalf = 10;
 
 	// The game event that caused the referee command
-	optional SSL_Referee_Game_Event gameEvent = 11;
+	optional Referee_Game_Event gameEvent = 11;
 }
