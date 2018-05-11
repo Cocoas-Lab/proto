@@ -14,7 +14,7 @@ add_subdirectory(ssl-protos/refbox)
 add_subdirectory(ssl-protos/vision)
 
 add_library(ssl-protos
-	$<TARGET_OBJECTS:grSim>
+	$<TARGET_OBJECTS:grsim>
   $<TARGET_OBJECTS:refbox>
   $<TARGET_OBJECTS:vision>
 )
