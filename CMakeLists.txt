@@ -9,7 +9,7 @@ if(NOT EXISTS ${Protobuf_PROTOC_EXECUTABLE})
   message(FATAL_ERROR "Could not find Protobuf Compiler!")
 endif()
 
-add_subdirectory(ssl-protos/grSsim)
+add_subdirectory(ssl-protos/grSim)
 add_subdirectory(ssl-protos/refbox)
 add_subdirectory(ssl-protos/vision)
 
