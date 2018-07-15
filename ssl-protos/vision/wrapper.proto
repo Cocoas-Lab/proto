@@ -1,4 +1,5 @@
 syntax = "proto2";
+package ssl_protos.vision;
 
 import "detection.proto";
 import "geometry.proto";
